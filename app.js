@@ -1,27 +1,13 @@
-//  i want to write the code about the i entered the code will be locked when i wirte the three timess
+// print the number of count when enter the yes 
 
+let word = prompt("Enter the word");
 
-let sahipassword   =  "sahil";
+let counter = 0;
 
-let attempt = 0 ; 
+while(word !== "stop"){
+    if(word=="yes") counter++;
+    word =prompt("Enter the word ");
 
-let password = prompt("Enter the password : ");
-
-attempt++ ;
-
-while(password !== sahipassword){
-if (attempt===3){
-    console.error("Account locked")
-    break;
-}
-    
-
-     password = prompt("Enter the password : ");
-     attempt++;
-
-    
 }
 
-if(password===sahipassword){
-    console.log("Account is Open");
-}
+console.log(`the yes count is ${counter}`);
